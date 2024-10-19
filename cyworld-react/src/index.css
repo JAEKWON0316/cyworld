@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app{height: auto; width: 1200px;background: skyblue;height: 500px;padding-left: 60px;padding-top: 30px;z-index:1;position: relative;}
+.app .outline::after{border: 1px solid #fff;content: "";position: absolute;width: 18.5%;height: 93.5%;left: 28px;top: 6px;border-right: none;border-radius: 8px;}
+.app .outline::before{border: 1px solid #fff;content: "";position: absolute;width: 40.4%;height: 93.5%;left: 261px;top: 6px;border-left: none;border-radius: 8px;}
+.app .inline::after{border: 1px dashed #fff;content: "";position: absolute;width: 16.8%;height: 86.2%;left: 50px;top: 25px;border-right: none;border-radius: 8px;}
+.app .inline::before{border: 1px dashed #fff;content: "";position: absolute;width: 38.4%;height: 86.2%;left: 262px;top: 25px;border-left: none;border-radius: 8px;}
+.bgs{position: relative;}
+.bgs::after{width: 40%; height: 448px; background: #ededed;position: absolute;content: "";top: 0;left: 202px;z-index: -99;border-radius: 8px;}
+.bgs::before{width: 17.3%; height: 448px; background: #ededed;position: absolute;content: "";top: 0;left: -5px;z-index: -99;border-radius: 8px;}
+.flex{display: flex;}
+.item-c{align-items: center;}
+.s-b{justify-content: space-between;justify-content: space-between;}
+.header{display: block;font-size: 14px;height: 44px;width: 55%;border-top-left-radius: 8px;border-top-right-radius: 8px;}
+.aside, .main , .nav{display: inline-block;}
+.aside{width: 13%;background: #fff;}
+.main{width: 40%;background: #fff;}
+.nav{position: relative;z-index: 1000;}
+
+.header .leftHeader{display: contents;}
+.header .leftHeader div {margin-right: 10px;}
+.header .leftHeader span {margin-right: 5px;}
+.header .leftHeader div span:first-child{font-size: 11px;}
+.header .leftHeader div:first-child span:first-child{color: red;}
+.header .mainHeader {margin-left: 15px; color: blue;}
+.header .rightHeader{text-align: right;}
+.header .rightHeader span:last-child{display: block;font-size: 11px;}
+.header .rightHeader span:first-child{margin-right: 10px;}
+.header .rightHeader span:first-child,
+.header .rightHeader span:nth-child(2){color: orange;}
+.header .flex:nth-child(2){width: 453px;}
+
+.aside{border: 1px solid #999;border-radius: 8px;text-align: center; padding: 30px 20px;padding-top: 0;position: relative;z-index: 1000;}
+.aside .asideTop{margin-top: 15px;margin-bottom: 5px;}
+.aside .asideTop, .asidePhto{border: 1px solid #999;border-radius: 3px;}
+.aside .asidePhto{height: 128px;position: relative;margin-bottom: 40px;}
+.aside .asidePhto img{width: 86%; position: absolute;top: -43px;left: 8px;}
+.aside .asideBottom{margin-top: 70px;border-bottom: 1px solid #999;margin-bottom: 8px;}
+.aside .asideLast div{display: flex;}
+
+.nav a{color: #fff;text-decoration: none;pointer-events: all;display: block;cursor: pointer;}
+.nav ul{list-style-type: none;padding: 0;}
+.nav ul li{text-align: center;border-left: none !important; border: 1px solid #666;border-top-left-radius: 0 !important; border-bottom-left-radius:0 !important;border-radius: 4px;padding: 6px 3px;background-color: rgb(56 142 176);}
+
+.nav ul a + a{margin-top: 2px;}
+
+.guesttop{display: block; background: #f2f2f2;width: 91%;height: 131px;margin: 10px auto;border-top: 1px solid #999;border-bottom: 1px solid #999;padding: 13px 11px;position: relative;}
+.guesttop .profile{position: relative;width: 105px;height: 105px;}
+.guesttop .write{width: 271px;}
+.guesttop .write textarea{width: 98%; height: 94%;border: none;outline: none;}
+.guesttop .profile img{position: absolute;top: -34px;left: 1px;}
+.guesttop .profile, .write{display: inline-block;vertical-align: top;background: #fff;height: 81%;margin: 4px;border: 1px solid #999;}
+.guesttop img{width: 100px;}
+.guesttop button{display: block;right: 12px;position: absolute;}
+
+.guestbottom{display: block; width: 91%;margin: 0px auto;padding: 13px 11px;position: relative;padding-left: 0;padding-bottom: 0;}
+.guestbottom .profile{position: relative;width: 105px;height: 105px;margin-left: 0 !important;}
+.guestbottom .write{width: 268px;margin-right: 0 !important;border: none !important;text-align: left;padding-top: 12px;max-height: 88px;overflow-y: auto;}
+.guestbottom .write p{
+  height: auto;                /* 높이를 자동으로 조절 */
+  text-align: left;           /* 왼쪽 정렬 */
+  margin: 0; 
+}
+.guestbottom .profile img{position: absolute;top: -34px;left: 1px;}
+.guestbottom .profile, .write{display: inline-block;vertical-align: top;background: #fff;height: 81%;margin: 4px;}
+.guestbottom img{width: 100px;}
+.guestbottom button{display: block;right: 12px;position: absolute;}
+.guest-item{height: 138px;}
+
+.content {width: 37%; border: 1px solid #999; margin-left: 8px; border-radius: 8px; background: #fff;overflow-y: auto; max-height: 395px;z-index: 1000;}
+.content::-webkit-scrollbar {width: 8px;}
+.content::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;}
+
+.profiletop{background: #f2f2f2;margin: 0;padding: 5px 15px;width: 95%;}
+.profiletop span + span{margin-left: 10px;}
+.profiletop span:nth-child(2){margin-right: -7px;}
+
+.profilebottom{height: 100%;padding-left: 11px;}
+
+form{display: inline;}
+.page{margin: 0 auto; text-align: center;position: relative;}
+.page span:first-child, .page span:last-child{position: relative;top: 2px;}
+.page span + span{ margin-left: 10px;}
+.page .pagination{padding: 0;display: flex;justify-content: center;}
+
+.pagination {margin: 0;list-style: none;}
+.pagination li + li{margin-left: 10px;}
+.pagination a{text-decoration: none; color: #000;}
+.profiletop button{border: none; position: relative; display: inline; padding: 0;color: #666;cursor: pointer;}
+.profiletop .del{margin-left: 97px;}
+.profiletop .change{margin-left: 6px !important;}
+
+.photoside{height: 348px;position: relative;}
+.photoside ul{padding: 0; list-style-type: none;}
+.photoside ul > a:first-of-type{font-weight: bold;}
+.photoside li{text-align: left;position: relative;}
+.photoside a{text-decoration: none;color: #333;}
+.photoside .phtoasidebutton{position: absolute;bottom: 0px;right: 0;}
+.photoside button{border: none;background: #fff;cursor: pointer;}
+
+.photolistdelbutton{position: absolute !important;right: 0;}
+.editbutton{position: absolute;top: 14px;right: -2px;}
+.asideEdit input{border: none; font-family: inherit;font-size: inherit;padding: 0;margin:0px;box-sizing: border-box;width: 100%;margin-bottom: 0.7px;}
+.asideEdit button{position: absolute;right: 1px;top: 0px;}
+
+.photoMiddle{display: flex;align-items: center;justify-content: space-between;margin: 3px 0px;}
+
+.photobottom{display: flex;justify-content: end; margin: 4px 0; border-top: 1px dashed #ededed; padding: 3px 0;}
+.photobottom button{border: none;color: orange;background: #fff;position: relative;}
+.photobottom button:first-child::after{content: "";position: absolute;width: 1px;height: 77%; border-left: 1px solid #d6d5d5;right: -1px;top: 2px;}
+
+.photowrite{display: flex; justify-content: flex-end;}
+.phtoTop{margin: 0 auto; padding: 5px; text-align: center;background: #f6f6f6;margin-top: 10px;border-top: 1px solid #d7d5d5;border-bottom: 1px dashed #d7d5d5;}
+
+.photophotowirte > div p img{width: 100%;}
+
+.photo{padding: 10px 6px 10px 10px;}
+.photoPeople{background: #f6f6f6;padding: 6px 4px;}
+.photoPeople input{width: 321px;}
+.photoPeople span + span{margin-left: 10px;}
+.photopeoplewrite {margin-top: 6px;}
+.photopeoplewrite ul{padding: 0;margin: 0;}
+.photopeoplewrite ul li{list-style-type: none; position: relative;display: flex;align-items: center;justify-content: space-between;background: #f6f6f6;padding: 7px 4px;}
+.photopeoplewrite ul li button{border: none;background: #f6f6f6;}
+.photopeoplewrite ul li + li{margin-top: 3px;}
+.photophotowirte > div {padding: 0 10px;}
+
+.photoWrite{padding: 10px;}
+.photowritetop{display: flex; align-items: center;}
+.photowritetop span + span{margin-left: 10px;}
+.photowritetop span input{width: 271px;}
+.photowritetop span h4{padding: 0;margin: 0;}
+.photowritetop span select {width: 94px;}
+.ql-toolbar.ql-snow .ql-formats {margin-right: 0px !important;}
+.ql-snow .ql-picker.ql-size {width: 76px !important;}
+.ql-snow .ql-picker.ql-font {width: 103px !important;}
+.ql-toolbar.ql-snow {padding: 0px !important;}
+.ql-snow.ql-toolbar button{width: 21px !important; }
+.ql-toolbar.ql-snow + .ql-container.ql-snow {height: 256px !important;}
+.writebtn{position: relative;margin-top: 10px;}
+
+/* Summernote 스타일 적용 */
+.note-editor {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;font-size: 14px; /* 원하는 폰트 크기로 변경 */}
+.note-toolbar {background-color: #f8f9fa; /* 툴바 배경 색상 */}
+.note-editable {min-height: 200px; /* 편집기 최소 높이 설정 */border: 1px solid #ced4da; /* 편집기 테두리 설정 */}
+
+.photo {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',sans-serif;}
+.photoTop {font-size: 15px;font-weight: bold;margin: 10px 0;text-align: center; background: #f6f5f5; border-top: 1px solid #dbdada;padding: 3px;}
+.photoMiddle {display: flex;justify-content: space-between;}
+.photoPhoto img {max-width: 100%;height: auto;}
+.photophotowirte {margin: 10px 0;}
+.photoPeople {display: flex;align-items: center;margin-top: 20px;}
+
+
