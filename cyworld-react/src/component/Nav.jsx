@@ -35,19 +35,19 @@ const Nav = ({ setShowPhotoAlbum }) => {
         {click.map((nav, index) => {
           const isSelected = index === selectedIndex;
           return (
-           <Link 
-                to={`/${nav.id}`} 
-                style={{ color: isSelected ? '#666' : '#fff' }}>
-                 <li
-              key={nav.id}
+            <li
+              key={nav.id} // key prop을 <li>에 추가
               onClick={() => handleClick(index, nav.id)} 
               style={{
                 backgroundColor: isSelected ? '#fff' : 'rgb(56 142 176)',
                 color: isSelected ? '#666' : '#fff'
               }}>
-              {nav.nav}
-             
-            </li> </Link>
+              <Link 
+                to={`/${nav.id}`} 
+                style={{ color: isSelected ? '#666' : '#fff' }}>
+                {nav.nav}
+              </Link>
+            </li>
           );
         })}
       </ul>
