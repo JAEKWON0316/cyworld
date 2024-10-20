@@ -1,6 +1,9 @@
 import React from 'react'
 import Img from '../images/miniroom.jpeg'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7c9f86f (-)
 const Home = () => {
   return (
     <div className='home'>
