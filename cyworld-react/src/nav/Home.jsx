@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from '../image/miniroom.jpeg'
+import Img from '../images/miniroom.jepg'
 const Home = () => {
   return (
     <div className='home'>
