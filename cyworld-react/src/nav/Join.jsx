@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Img from '../image/logo.svg';
+import Img from '../images/logo.svg';
 import { Link } from 'react-router-dom';
 
 const Join = () => {
