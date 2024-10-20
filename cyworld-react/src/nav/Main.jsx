@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Img from '../image/logo.svg'
+import Img from '../images/logo.svg'
 
 const Main = () => {
   return (
