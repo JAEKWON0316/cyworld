@@ -7,6 +7,7 @@ import Guest from './nav/Guest';
 import Photo from './nav/Photo';
 import Profile from './nav/Profile';
 import Nav from './component/Nav';
+import Diary from './nav/DiaryList';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import PhotoWrite from './nav/PhotoWrite';
 import PhotoReWrite from './nav/PhotoReWrite';
@@ -59,6 +60,7 @@ const AppContent = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/photo/photoWrite" element={<PhotoWrite />} />
                 <Route path='/photo/photoReWrite/:id' element={<PhotoReWrite />} />
+                <Route path='/diary' element={<Diary />} />
               </Routes>
             </div>
             <Nav setShowPhotoAlbum={setShowPhotoAlbum} /> {/* Pass setShowPhotoAlbum function */}
