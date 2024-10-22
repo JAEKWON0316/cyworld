@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name = "users") // 데이터베이스의 테이블 이름을 명시적으로 지정
+@Table(name = "user") // 데이터베이스의 테이블 이름을 명시적으로 지정
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserEntity {
