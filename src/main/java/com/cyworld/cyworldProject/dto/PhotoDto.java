@@ -10,9 +10,9 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PhotoDto {
-    private int id;
-    private int user_id;
-    private int menu_id;
+    private long id;
+    private long user_id;
+    private long menu_id;
     private String album_title;
     private String p_text;
     private Timestamp wdate;

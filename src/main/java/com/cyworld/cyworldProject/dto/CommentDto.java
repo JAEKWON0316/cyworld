@@ -12,9 +12,9 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentDto {
-    private int id;
-    private int photo_id;
-    private int author_id;
-    private String comnet;
+    private long id;
+    private long photo_id;
+    private long author_id;
+    private String comment;
     private Timestamp wdate;
 }

@@ -37,4 +37,5 @@ public class DiaryEntity {
 
      @Column(name = "created_at", nullable = false)
     private Timestamp createdAt = Timestamp.valueOf(LocalDateTime.now());
+    
 }

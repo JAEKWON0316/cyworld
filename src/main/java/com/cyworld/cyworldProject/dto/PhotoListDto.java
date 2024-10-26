@@ -11,8 +11,8 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PhotoListDto {
-    private int id;
-    private int user_id;
+    private long id;
+    private long user_id;
     private String menu_title;
     private Timestamp wdate;
     private int visible;

@@ -13,8 +13,8 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DiaryDto {
-    private Long id;
-    private Long userId; // 사용자 ID
+    private long id;
+    private long userId; // 사용자 ID
     private String content; // 다이어리 내용
     private Timestamp createdAt; // 생성 시간
 }

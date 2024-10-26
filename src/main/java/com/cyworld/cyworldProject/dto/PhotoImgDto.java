@@ -10,8 +10,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PhotoImgDto {
-    private int id;
-    private int photo_id;
+    private long id;
+    private long photo_id;
     private String ofilename;
     private String nfilename;
     private String ext;
